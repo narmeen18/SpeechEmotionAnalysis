@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="icon" href="{{url_for('static',filename = 'speaker.jpg')}}" type="image/gif" sizes="16x16">
+    <title>Speech Emotion Recognition</title>
+     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'css/aa.css')}}">
+</head>
+
+
+<body>
+  <header>
+    <div class = "b1">
+     <div class="logo"><img src="{{url_for('static',filename = 'aud.png')}}"> </div>
+      <ul><li ><a href=home>Home</a></li><li class="active"><a href=about>About</a></li>  </ul>
+   </div>    
+     <div class= "title1"><h1>SEMO: Audio-Emotion Analysis</h1></div>
+     <div class="abtimg"><img src="{{url_for('static',filename = 'about.gif')}}"> </div>
+
+  <div class = "para">
+     <p>SEMO is an AI based audio emotion classifier that works on a very complex CNN algorithm using RAVDESS and tess datasets. IT is simple to use, you just need to click on the start button to record an audio and the classifier will predict the sentiment.</p>
+            </div>
+   <a class= "back" href=home>Try it now!</a>
+
+ </header>
+</body>
+</html>

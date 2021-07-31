@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+      <link rel="icon" href="{{url_for('static',filename = 'speaker.jpg')}}" type="image/gif" sizes="16x16">
+    <title>Speech Emotion Recognition</title>
+     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'css/aa.css')}}">
+</head>
+
+
+<body>
+  <header>
+    <div class = "b1">
+     <div class="logo"><img src="{{url_for('static',filename = 'aud.png')}}"> </div>
+      <ul><li class="active"><a href=home>Home</a></li><li><a href=about>About</a></li>  </ul>
+   </div>    
+     <div class= "title"><h1>SEMO: Audio-Emotion Analysis</h1></div>
+  <div class = "f">
+            <form action="/record" method="get" >
+             <fieldset class="field">
+             <legend class= "rec1"> Record your voice for analysis </legend>
+             <button class="btn" name="record" type="submit">Record</button>
+              </fieldset>
+             </form> 
+   </div>
+
+ </header>
+</body>
+</html>
